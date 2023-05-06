@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
+        "php": ">=7.4",
         "illuminate/console": "^8.12.0"
     },
     "autoload": {
@@ -30,5 +30,7 @@
     ],
     "extra": {
         "version": "1.0.0"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
