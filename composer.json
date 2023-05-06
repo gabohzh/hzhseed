@@ -1,5 +1,5 @@
 {
-    "name": "hzh-seed",
+    "name": "hzh/seed",
     "description": "Libreria que permite crear seeds a partir de tablas de una base de datos.",
     "type": "library",
     "license": "MIT",
