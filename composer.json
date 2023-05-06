@@ -17,5 +17,15 @@
         "psr-4": {
             "Hzh\\": "src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": ""
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gabohzh/hzhSeed.git"
+        }
+    ]
 }
