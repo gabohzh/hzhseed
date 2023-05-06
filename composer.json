@@ -1,0 +1,21 @@
+{
+    "name": "hzh-seed",
+    "description": "Libreria que permite crear seeds a partir de tablas de una base de datos.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Avalos",
+            "email": "gabriel_hzh@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/console": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hzh\\": "src/"
+        }
+    }
+}
