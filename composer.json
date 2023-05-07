@@ -20,10 +20,6 @@
     },
     "repositories": [
         {
-            "type": "composer",
-            "url": ""
-        },
-        {
             "type": "vcs",
             "url": "https://github.com/gabohzh/hzhSeed.git"
         }

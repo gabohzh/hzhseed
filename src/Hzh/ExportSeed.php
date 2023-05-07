@@ -4,7 +4,7 @@ namespace Hzh;
 
 use Illuminate\Support\Facades\Artisan;
 
-class ExporSeed
+class ExportSeed
 {
     public static function exportar($tabla, $modelo)
     {
