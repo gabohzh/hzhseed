@@ -8,7 +8,7 @@ composer require hzh/seeder
 
 Use:
 
-1. After Installation you must put this line in your config/app.php inside a providers array:
+1. After Installation you must put this line in your config/app.php inside a provider's array:
 
       Hzh\Seeder\HzhServiceProvider::class
       
