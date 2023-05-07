@@ -1,5 +1,5 @@
 <?php
-namespace Hzh\Commands;
+namespace Hzh\Seeder\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;

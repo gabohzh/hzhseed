@@ -1,8 +1,8 @@
 <?php 
-namespace Hzh;
+namespace Hzh\Seeder;
 
 use Illuminate\Support\ServiceProvider;
-use Hzh\Commands\GenerateSeederCommand;
+use Hzh\Seeder\Commands\GenerateSeederCommand;
 
 class HzhServiceProvider extends ServiceProvider
 {
