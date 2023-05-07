@@ -1,14 +1,13 @@
 <?php
-
+namespace Database\Seeders;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use App\Models\{{model}};
+use App\Models\{{modelName}};
 class {{className}} extends Seeder
 {
     public function run()
     {
         $data = {{data}};
 
-        {{model}}::insert($data);
+        {{modelName}}::insert($data);
     }
 }

@@ -1,35 +1,36 @@
 <?php
+
 namespace Hzh\Seeder\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
-// use Faker\Factory as FakerFactory;
+use Illuminate\Support\Str;
 
 class GenerateSeederCommand extends Command
 {
+    protected $name = 'Seeder Generator';
     protected $signature = 'hzh:seeder {table} {model}';
-
-    protected $description = 'Generate a Seeder file for the specified table.';
+    protected $description = 'Generate a Seeder file for the specified table from current database.';
+    protected $help = 'You can generate a Seeder file for the specified table in your current database';
 
     public function handle()
     {
         $tableName = $this->argument('table');
         $modelName = $this->argument('model');
-        // $faker = FakerFactory::create();
+        $modelClass = "App\Models\\" . $modelName;
+        $data = $modelClass::all();
 
-        $data = DB::table($tableName)->get();
+        $current_date = date('Y-m-d H:i:s');
 
-        // $seederData = $data->map(function ($item) use ($faker) {
-        //     return (array) $item + ['created_at' => now(), 'updated_at' => now()];
-        // });
-
-        $className = studly_case($tableName) . 'Seeder';
+        foreach ($data as $row) {
+            $row['created_at'] = $current_date;
+            $row['updated_at'] = $current_date;
+        }
+        $className = Str::studly($tableName) . 'Seeder';
         $fileName = $className . '.php';
         $path = database_path('seeders/' . $fileName);
-
-        $template = file_get_contents(__DIR__ . '/../templates/seeder.stub');
+        $template = file_get_contents(__DIR__ . '/../../stubs/seeders/seeder.stub');
         $template = str_replace('{{className}}', $className, $template);
-        $template = str_replace('{{modelName}}', $tableName, $template);
+        $template = str_replace('{{modelName}}', $modelName, $template);
         $template = str_replace('{{data}}', var_export($data->toArray(), true), $template);
 
         file_put_contents($path, $template);
