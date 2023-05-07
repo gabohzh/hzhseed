@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit593608ec456b671339e83df79c74e568
+class ComposerStaticInit53b9a5361b4f6bac584467c9c3d85fb9
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -57,6 +57,7 @@ class ComposerStaticInit593608ec456b671339e83df79c74e568
             'Illuminate\\Pipeline\\' => 20,
             'Illuminate\\Filesystem\\' => 22,
             'Illuminate\\Events\\' => 18,
+            'Illuminate\\Database\\' => 20,
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
             'Illuminate\\Console\\' => 19,
@@ -66,6 +67,10 @@ class ComposerStaticInit593608ec456b671339e83df79c74e568
         array (
             'Hzh\\' => 4,
         ),
+        'F' => 
+        array (
+            'Faker\\' => 6,
+        ),
         'D' => 
         array (
             'Doctrine\\Inflector\\' => 19,
@@ -73,6 +78,10 @@ class ComposerStaticInit593608ec456b671339e83df79c74e568
         'C' => 
         array (
             'Carbon\\' => 7,
+        ),
+        'B' => 
+        array (
+            'Brick\\Math\\' => 11,
         ),
     );
 
@@ -164,6 +173,10 @@ class ComposerStaticInit593608ec456b671339e83df79c74e568
         array (
             0 => __DIR__ . '/..' . '/illuminate/events',
         ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
+        ),
         'Illuminate\\Contracts\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/contracts',
@@ -184,6 +197,10 @@ class ComposerStaticInit593608ec456b671339e83df79c74e568
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
+        ),
         'Doctrine\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
@@ -191,6 +208,10 @@ class ComposerStaticInit593608ec456b671339e83df79c74e568
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Brick\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brick/math/src',
         ),
     );
 
@@ -207,9 +228,9 @@ class ComposerStaticInit593608ec456b671339e83df79c74e568
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit593608ec456b671339e83df79c74e568::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit593608ec456b671339e83df79c74e568::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit593608ec456b671339e83df79c74e568::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit53b9a5361b4f6bac584467c9c3d85fb9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit53b9a5361b4f6bac584467c9c3d85fb9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit53b9a5361b4f6bac584467c9c3d85fb9::$classMap;
 
         }, null, ClassLoader::class);
     }

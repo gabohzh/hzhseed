@@ -1,0 +1,14 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use App\Models\{{model}};
+class {{className}} extends Seeder
+{
+    public function run()
+    {
+        $data = {{data}};
+
+        {{model}}::insert($data);
+    }
+}

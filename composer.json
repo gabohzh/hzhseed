@@ -1,6 +1,6 @@
 {
-    "name": "hzh/seed",
-    "description": "Libreria que permite crear seeds a partir de tablas de una base de datos.",
+    "name": "hzh/seeder",
+    "description": "Libreria que permite crear seeders a partir de tablas de una base de datos.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -10,23 +10,15 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "illuminate/console": "^10.9",
-        "illuminate/support": "*"
+        "php": "^7.3|^8.0",
+        "illuminate/database": "^8.0",
+        "fzaninotto/faker": "^1.14",
+        "illuminate/console":"*"
     },
     "autoload": {
         "psr-4": {
             "Hzh\\": "src/"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/gabohzh/hzhSeed.git"
-        }
-    ],
-    "extra": {
-        "version": "1.0.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
