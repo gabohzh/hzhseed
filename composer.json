@@ -1,25 +1,26 @@
 {
-    "name": "hzh/seeder",
-    "description": "Libreria que permite crear seeders a partir de tablas de una base de datos.",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Gabriel Avalos",
-            "email": "gabriel_hzh@hotmail.com"
-        }
-    ],
-    "require": {
-        "php": "^7.3|^8.0",
-        "illuminate/database": "^8.0",
-        "fzaninotto/faker": "^1.14",
-        "illuminate/console":"*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Hzh\\": "src/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "hzh/seeder",
+  "description": "Libreria que permite crear seeders a partir de tablas de una base de datos.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gabriel Avalos",
+      "email": "gabriel_hzh@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/database": "*",
+    "fzaninotto/faker": "*",
+    "illuminate/console": "*",
+    "illuminate/support": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hzh\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
