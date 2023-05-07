@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Hzh\\Seeder": "src/"
+      "Hzh\\Seeder\\": "src/"
     }
   },
   "minimum-stability": "dev",
