@@ -1,26 +1,26 @@
 <?php
 
 namespace Hzh;
+use Illuminate\Console\Command;
 
-use Symfony\Component\Console\Command\Command;
-
-class MyCommand extends Command
+class ComandoSeed extends Command
 {
     protected $signature = 'hzh {param}';
 
-    protected $description = 'Crea un seed a partir de una tabla de bdd';
+    protected $description = 'Crea un seeder a partir de una tabla de bdd';
 
     public function configure()
     {
-        $this->setDescription('Crea un seed a partir de una tabla de base de datos bdd')
-             ->setHelp('Help text for my command')
-             ->addArgument('param', InputArgument::REQUIRED, 'Description of the parameter');
+        $this->setDescription('Crea un seeder a partir de una tabla de base de datos bdd')
+             ->setHelp('Ingresa la tabla y el modelo')
+             ->addArgument('table', InputArgument::REQUIRED, 'Table from bdd')
+             ->addArgument('model', InputArgument::REQUIRED, 'model name');
     }
 
     public function handle()
     {
         $myClass = new ExportSeed();
-        $result = $myClass->exportar($this->argument('param'));
+        $result = $myClass->exportar($this->argument('table'), $this->argument('model'));
         $this->info($result);
     }
 }

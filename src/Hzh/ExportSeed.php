@@ -37,6 +37,6 @@ EOT;
         file_put_contents($archivo, $contenido);
 
         // Ejecutar el comando para agregar los datos a la base de datos de Laravel
-        Artisan::call('db:seed', ['--class' => $tabla . 'Seeder']);
+        //Artisan::call('db:seed', ['--class' => $tabla . 'Seeder']);
     }
 }
