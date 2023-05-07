@@ -1,4 +1,4 @@
-# hzhseed
+# hzh seed
 
 This library allow to generate a seeder file from existing table in current database (Laravel).
 
