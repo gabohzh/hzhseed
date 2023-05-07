@@ -20,3 +20,6 @@ Use:
 3. Enjoy it!
 
 
+NOTE: Is imperative to has a Model created before use this library.
+
+
