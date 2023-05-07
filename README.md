@@ -1,12 +1,12 @@
-# hzh seed
+# hzh seeder
 
 This library allow to generate a seeder file from existing table in current database (Laravel).
 
-Installation:
+### Installation:
 
 composer require hzh/seeder
 
-Use:
+### Use:
 
 1. After Installation you must put this line in your config/app.php inside a provider's array:
 
@@ -20,6 +20,6 @@ Use:
 3. Enjoy it!
 
 
-NOTE: Is imperative to has a Model created before use this library.
+### NOTE: Is imperative to has a `Model` created before use this library.
 
 
